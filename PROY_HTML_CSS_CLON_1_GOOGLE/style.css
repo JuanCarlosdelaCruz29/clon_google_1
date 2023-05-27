@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(51, 51, 51);
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    /* background-color: teal; */
+    padding: 0 12px;
+}
+
+header .options {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* background-color: indigo; */
+}
+
+header .options a {
+    text-decoration: none;
+    color: white;
+}
+
+header .options a:hover {
+    text-decoration: underline;
+}
+
+.logo_options {
+    display: inline-block;
+    background-image: url(/img/logo_options.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.search-logo{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url(/img/logo_searcher.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.micro-logo{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(/img/logo_micro.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.camera-logo{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/img/logo_camera.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .options a img {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+main {
+    height: calc(100% - 60px - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: teal; */
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: indigo; */
+    gap: 25px;
+}
+
+main .container figure{
+    height: 92px;
+}
+
+main .container figure img {
+    height: 100%;
+}
+
+main .container .searcher {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width:450px;
+    /* background-color: aqua; */
+    padding: 8px;
+    gap: 5px;
+    border: 1px solid gray;
+    border-radius: 24px;
+}
+
+main .container .searcher:hover {
+    border: 2px solid rgb(163, 162, 162);
+}
+
+main .container .searcher button {
+    background-color: transparent;
+    border: none;
+
+}
+
+main .container .searcher input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+}
+
+main .container .btn-search {
+    display: flex;
+    /* background-color: aqua; */
+    gap: 10px;
+}
+
+main .container .btn-search button {
+    border: none;
+    border-radius: 4px;
+    background-color: #4d4e53;
+    padding: 12px;
+    color: whitesmoke;
+}
+
+main .container .btn-search button:hover {
+    background-color:#666668 ;
+}
+
+main .container p {
+    font-size: small;
+    color: whitesmoke;
+}
+
+main .container p:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    background-color: #171717;
+}
+
+footer section {
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    height: 50%;
+    color: #999da2;
+
+}
+
+footer section.more-info {
+    border-top: #353537 solid 2px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer section.more-info div {
+    display:flex;
+    gap: 15px;
+}
+
+footer section.more-info div a {
+    color: #999da2;
+    text-decoration: none;
+}
+
+footer section.more-info div a:hover {
+    color: white;
+    text-decoration: underline;
+}
